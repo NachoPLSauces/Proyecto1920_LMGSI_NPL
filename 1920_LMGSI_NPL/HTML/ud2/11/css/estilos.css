@@ -1,0 +1,73 @@
+
+/* 
+    Created on : 25-nov-2019, 22:17:12
+    Author     : Amor Rodríguez <amor at marodriguezn@educa.jcyl.es>
+*/
+body {
+	margin-right: 250px;
+	background-image: url(../images/Le_petit_prince.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 250px;
+}
+.outset {
+	background-color: #ADD8E6;
+	color: red;
+	outline: double 5px pink;
+	border: solid red;
+	text-transform: capitalize;
+	font-family: Impact, Charcoal, sans-serif;
+	text-align: center;
+	margin: 0% 30%;
+}
+#par1 {
+	color: green;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+.txt {
+	font-family: verdana, sans serif;
+	border-style: dotted solid;
+	border-color: red green;
+	border-radius: 20px;
+	padding: 10px;
+	text-indent: 25px;
+}
+#par2 {
+	text-decoration: overline;
+	text-align: center;
+}
+p.uno{
+	vertical-align: center;
+}
+a.enl1:link {
+	color: red;
+	background-color: LightSalmon;
+}
+a.enl1:visited {
+	color: green;
+	background-color: GreenYellow;
+}
+a.enl1:hover {
+	color: hotpink;
+	background-color: khaki;
+}
+a.enl1:active {
+	color: blue;
+	background-color: Aquamarine;
+}
+a.enl2 {
+	border: solid 1px DarkSlateBlue;
+	padding: 10px;
+}
+a.enl2:link {
+	color: DarkSlateBlue;
+}
+a.enl2:visited {
+	color: DarkSlateBlue;
+}
+a.enl2:hover {
+	color: #fff;
+	background-color: DarkSlateBlue;
+}

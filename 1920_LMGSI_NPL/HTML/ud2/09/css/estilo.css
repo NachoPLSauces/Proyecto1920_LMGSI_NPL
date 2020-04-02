@@ -1,0 +1,65 @@
+﻿body{
+	background-color: orange; 
+	background-image: url("../images/calabaza.png");
+	background-position: left top;
+	background-repeat: repeat-y;
+	background-size: 125px;
+	background-attachment: fixed;
+	margin-left: 125px;
+}
+
+.caja1, .caja2, .caja3{
+	width: 180px; 
+	height: 180px; 
+	margin: 5px; 
+	display: inline-block; 
+	border-width: 10px;
+}
+
+.caja1{
+	border: green dotted;
+	background-color: yellowgreen;
+	background-image: url("../images/kiwi.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 125px;
+}
+
+.caja1:hover{
+	background-image: url("../images/kiwi.png");
+	background-size: 33%;
+	background-repeat: repeat;
+}
+
+.caja2{
+	border: yellowgreen double;
+	background-color: green;
+	background-image: url("../images/apple.png");
+	background-position: right bottom;
+	background-size: 33%;
+}
+
+.caja2:hover{
+	border: yellowgreen double;
+	background-color: yellow;
+	background-image: url("../images/apple.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+}
+
+.caja3{
+	background-color: transparent;
+	border: green outset;
+	background-image: url("../images/melon.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 33%;
+}
+
+.caja3:hover{
+	background-image: url("../images/melon.png"), url("../images/kiwi.png"), url("../images/apple.png");
+	background-position: left top, right top, right bottom;
+	background-size: 33%;
+	background-color: transparent;
+}

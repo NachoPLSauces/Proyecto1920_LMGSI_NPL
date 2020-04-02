@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE company [
+	<!ELEMENT firstname (#PCDATA)>
+	<!ELEMENT lastname (#PCDATA)>
+	<!ELEMENT contactno (#PCDATA)>
+	<!ELEMENT email (#PCDATA)>
+	<!ELEMENT city (#PCDATA)>
+	<!ELEMENT state (#PCDATA)>
+	<!ELEMENT zip (#PCDATA)>
+	<!ELEMENT address (city, state, zip)>
+	<!ELEMENT employee (firstname, lastname, contactno*, email*, address)>
+	<!ELEMENT company (employee*)>
+
+]>
+
+<company>
+	<employee>
+		<firstname>Nacho</firstname>
+		<lastname>del Pradp</lastname>
+		<contactno>123456789</contactno>
+		<email>email@gmail.com</email>
+		<address>
+			<city>Benavente</city>
+			<state>Zamora</state>
+			<zip>49600</zip>
+		</address>
+	</employee>
+</company>

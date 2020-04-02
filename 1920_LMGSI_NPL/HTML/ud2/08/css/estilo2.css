@@ -1,0 +1,19 @@
+/* 
+    Created on : 
+    Author     : 
+    File        : estilo2.css
+    Description : Trabajando con selectores
+*/
+div a {
+ background-color:#009cde; /* color azul*/
+ color:#ffffff; /*Color blanco */
+ text-decoration:none;
+}
+div div div a{
+ background-color:#ff0000; /*color rojo*/
+ color:yellow; /*color amarillo*/
+ text-decoration:none;
+}
+
+
+

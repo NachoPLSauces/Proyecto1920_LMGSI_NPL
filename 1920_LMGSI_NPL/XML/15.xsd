@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+
+<xs:element name="vertebrados">
+	<xs:complexType>  
+		<xs:sequence>
+			<xs:element name="clasificacion">
+			<xs:complexType>
+					<xs:sequence>
+						<xs:element name="tipo" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="nombre" type="xs:string"/>
+									<xs:element name="reproduccion">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:pattern value="viviparos|oviparos"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="terrestre" type="xs:boolean"/>
+									<xs:element name="extremidades">
+										<xs:complexType>
+											<xs:simpleContent>
+												<xs:extension base="xs:integer">
+													<xs:attribute name="numero">
+														<xs:simpleType>
+															<restriction base="xs:integer">				
+																<xs:minInclusive value="0"/>
+															</restriction>
+														</xs:simpleType>
+													</xs:attribute>
+												</xs:extension>
+											</xs:simpleContent>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="alimentacion">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:pattern value="carnivoros|herbiboros|omnivoros"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence> 
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>		
+	</xs:complexType>
+</xs:element>
+</xs:schema>

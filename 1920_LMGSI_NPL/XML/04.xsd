@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+
+<xs:element name="correo">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="remitente"/>
+			<xs:element name="destinatarios">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="correousuario" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="asunto"/>
+			<xs:element name="mensaje"/>
+			<xs:element name="adjuntos">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="imagen" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="type">
+											<xs:simpleType>
+												<restriction base="xs:string">
+													<!-- <xs:enumeration value="png"/> -->
+													<!-- <xs:enumeration value="jpg"/> -->
+													<xs:pattern value="png|jpg"/>
+												</restriction>
+											</xs:simpleType>
+										</xs:attribute>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="fecha" type="xs:date"/>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

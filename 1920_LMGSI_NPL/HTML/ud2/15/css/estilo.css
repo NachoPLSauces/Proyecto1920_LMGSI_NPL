@@ -1,0 +1,118 @@
+﻿
+/* 
+    Created on : 03-dic-2019, 19:10:50
+    Author     : Amor Rodríguez <amor at marodriguezn@educa.jcyl.es>
+   
+*/
+body {
+	font-family: calibri, arial, sans-serif;
+	background-image: url(../images/Le_petit_prince.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 200px;
+	margin-right: 200px;
+}
+h1 {
+	background-color: #FFB973;
+	color: #FF4500;
+	
+	font-variant: small-caps;
+}
+.par1 {
+	color: green;
+	background-color: lightblue;
+	font-weight: bold;
+}
+.static {
+	border: 3px solid #E9967A;
+	padding: 3px;
+}
+.relative {
+	border: 3px dotted #9932CC;
+	position: relative;
+	left: 30px;
+	padding: 3px;
+}
+.fixed {
+	border: 3px dashed green;
+	background-color: #FFB973;
+	width: 250px;
+	position: fixed;
+	right: 0px;
+	bottom: 30px;
+	padding: 3px;
+}
+.relative1 {
+	position: relative;
+	border: 3px groove #008000;
+	width: 500px;
+	padding: 3px;
+	height: 150px;
+}
+.absolute1 {
+	position: absolute;
+	right: 5px;
+	bottom: 0px;
+	border: 3px solid lightgreen;
+	width: 50%;
+	padding: 3px;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	right: 0px;
+	top: 0px;
+	border: 3px solid lightgreen;
+	border-radius: 20px;
+	background-color: green;
+	color: lightgreen;
+	text-align: center;
+	padding: 3px;
+}
+.img1 {
+	position: absolute;
+	width: 30%;
+	z-index: -1;
+}
+.container {
+	position: relative;
+	border: solid 2px #8B008B;
+}
+.img2 {
+	position: absolute;
+	opacity: 0.5;
+	z-index: -1;
+}
+.container div {
+	border: solid 2px #8B008B;
+	background-color: #FF9C00;
+	color: #8B008B;
+	font-size: 2px;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.topleft{
+	left: 8px;
+	top: 8px;
+}
+.topright{
+	top: 8px;
+	right: 8px;	
+}
+.center{
+	left: 45%;
+	top: 45%;
+}
+.bottomleft{
+	bottom: 8px;
+	left: 8px;
+}
+.bottomright{
+	bottom: 8px;
+	right: 8px;	
+}
+
+
+
+

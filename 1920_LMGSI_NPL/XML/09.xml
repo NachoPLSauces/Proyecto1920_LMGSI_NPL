@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="estilo09.css"?>
+
+<!DOCTYPE ejemploscodigo [
+	<!ELEMENT lenguaje (#PCDATA)>
+	<!ELEMENT codigo (#PCDATA)>
+	<!ELEMENT ejemplo (lenguaje, codigo)>
+	<!ELEMENT ejemploscodigo (ejemplo+)>
+]>
+
+<ejemploscodigo>
+	<ejemplo>
+		<lenguaje>Java</lenguaje>
+		<codigo>
+			<![CDATA[
+				public class Ejercicio{
+					public static void main(String[] args){
+						System.out.println("Hola Mundo!");
+					}
+				}	
+			]]>
+		</codigo>
+	</ejemplo>
+	<ejemplo>
+		<lenguaje>HTML</lenguaje>
+		<codigo>
+			<![CDATA[
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+					</head>
+					<body>
+						<header>
+							<h1>Hola Mundo!</h1>
+						<header>
+					</body>
+				</html>
+			]]>
+		</codigo>
+	</ejemplo>
+</ejemploscodigo>

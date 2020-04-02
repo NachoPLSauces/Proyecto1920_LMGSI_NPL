@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Tipo del atributo nivel -->
+<xs:simpleType name="nivelTipo">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="infantil"/>
+		<xs:enumeration value="adultos"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<!-- Tipo del elemento codigo -->
+<xs:simpleType name="nivelTipo">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Z][0-9][0-9]"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<!-- Tipo del elemento minutos_sesion -->
+<xs:simpleType name="minutosSesionTipo">
+	<xs:restriction base="xs:integer">
+		<xs:maxInclusive value="120"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<!-- Tipo del elemento sesiones_semana -->
+<xs:simpleType name="sesionesTipo">
+	<xs:restriction base="xs:integer">
+		<xs:minInclusive value="1"/>
+		<xs:maxInclusive value="2"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<!-- Tipo del atributo intensidad -->
+<xs:simpleType name="intensidadTipo">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="suave"/>
+		<xs:enumeration value="moderado"/>
+		<xs:enumeration value="fuerte"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:element name="actividades">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="actividad" minOccurs="0" maxOccurs="20">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="codigo" type="codigoTipo"/>
+						<xs:element name="titulo" type="xs:string"/>
+						<xs:element name="fecha_inicio" type="xs:date"/>
+						<xs:element name="sesiones" minOccurs="1">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="minutos_sesion" type="minutosSesionTipo" default="60"/>
+									<xs:element name="sesiones_semana" type="sesionesTipo"/>
+								</xs:sequence>
+								<xs:attribute name="intensidad" type="intensidadTipo"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="nivel" type="nivelTipo"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

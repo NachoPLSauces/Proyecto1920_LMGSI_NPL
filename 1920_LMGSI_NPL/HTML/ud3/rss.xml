@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Nacho del Prado Losada</title>
+		<link>https://192.168.2.120/HTML/ud3</link>
+		<description>Sitio web de Nacho del Prado Losada de LMGSGI</description>
+		<category></category>
+		<language>es</language>
+			<item>
+				<guid isPermaLink="false">16</guid>
+				<title>Entrega 16</title>
+				<link>
+					http://192.168.2.120/HTML/ud2/16/
+				</link>
+				<description>
+					Los libros mas vendidos
+					<![CDATA[]]>
+				</description>
+				<author>abc@gmail.com</author>
+			</item><item>
+				<guid isPermaLink="false">15</guid>
+				<title>Entrega 15</title>
+				<link>
+					http://192.168.2.120/HTML/ud2/15/
+				</link>
+				<description>
+					Tipos de posicionamiento
+					<![CDATA[]]>
+				</description>
+			</item><item>
+				<guid isPermaLink="false">13</guid>
+				<title>Entrega 13</title>
+				<link>
+					http://192.168.2.120/HTML/ud2/13/
+				</link>
+				<description>
+					Ejemplares vendidos de diferentes libros
+					<![CDATA[]]>
+				</description>
+			</item><item>
+				<guid isPermaLink="false">12</guid>
+				<title>Entrega 12</title>
+				<link>
+					http://192.168.2.120/HTML/ud2/12/
+				</link>
+				<description>
+					Personajes de "El Principito"
+					<![CDATA[]]>
+				</description>
+			</item><item>
+				<guid isPermaLink="false">11</guid>
+				<title>Entrega 11</title>
+				<link>
+					http://192.168.2.120/HTML/ud2/11/
+				</link>
+				<description>
+					Datos de "El Principito"
+					<![CDATA[]]>
+				</description>
+			</item>
+			<pubDate></pubDate>
+			<skipDays>Friday, Saturday, Sunday</skipDays>
+			<lastBuildDate>Thu, 15 Ene 2020 08:52:00 +0100</lastBuildDate>
+			<copyright>2019-20 IES LOS SAUCES. Todos los derechos reservados. Nacho del Prado Losada</copyright>
+	</channel>
+</rss>

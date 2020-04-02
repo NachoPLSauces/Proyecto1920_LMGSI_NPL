@@ -1,0 +1,10 @@
+/* 
+    Created on :
+    Author     : 
+    File        : estilo8.css
+    Description : Trabajando con selectores
+*/
+#abuelo > div {border: 1px solid red;}
+
+
+

@@ -1,0 +1,79 @@
+
+/* 
+    Created on : 27-nov-2019, 19:10:50
+    Author     : Amor Rodríguez <amor at marodriguezn@educa.jcyl.es>
+    Colores utilizados: https://www.w3schools.com/colors/colors_groups.asp  
+*/
+body {
+	margin-right: 250px;
+	background-image: url(../images/Le_petit_prince.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+h1 {
+	color: darkred;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-family: Calibri;
+}
+p::first-letter{
+  font-size: 1.3em;
+}
+p {
+	background-color: Crimson;
+	padding: 5px 0px;
+	font-style: italic;
+	font-family: Calibri;
+}
+p span {
+	color: #FFF;
+}
+li {
+	font-size: 1.2em;
+	font-family: arial, sans-serif;
+}
+ol li::before {
+	content: "•"; 
+	color: darkred;
+	display: inline-block; 
+	width: 1.2em;
+    margin-left: -0.8em;
+}
+ul.lista1 {
+	list-style: inside circle;
+}
+ul.lista2 {
+	list-style: square;
+}
+.lista3 li {
+	list-style-image: url(../images/sqpurple.png);
+	list-style-position: inside;
+}
+ol.lista4 {
+	color: lightsalmon;
+	background-color: lightsalmon;
+	border: darkred dashed 5px;
+	padding: 10px 15px;;
+}
+ol li {
+	background-color: darkred;
+	padding: 5px 0px;
+	margin: 5px;
+}
+.lista5 {
+	color: darkred;
+	background-color: darkred;
+	padding-left: 10px;
+	list-style: none;
+}
+.lista5 li {
+	padding: 5px;
+	background-color: lightsalmon;
+}
+ul.lista6 {
+	color: darkred;
+	list-style: none;
+	border: 1px darkred dotted;
+	border-right: 0px;
+	padding: 5px;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE  hechoshistoricos [
+	<!ELEMENT descripcion (#PCDATA)>
+	<!ELEMENT dia (#PCDATA)>
+	<!ELEMENT mes (#PCDATA)>
+	<!ELEMENT año (#PCDATA)>
+	<!ELEMENT fecha (dia, mes, año)>
+	<!ELEMENT hecho (descripcion, fecha)>
+	<!ELEMENT hechoshistoricos (hecho+)>
+	<!ATTLIST correo xmlns:xsi CDATA #IMPLIED
+					 xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+]>
+
+<hechoshistoricos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="03.xsd">
+	<hecho>
+		<descripcion>Se funda Youtube</descripcion>
+		<fecha>
+			<dia>15</dia>
+			<mes>2</mes>
+			<año>2005</año>
+		</fecha>
+	</hecho>
+	<hecho>
+		<descripcion>Se funda Google</descripcion>
+		<fecha>
+			<dia>4</dia>
+			<mes>9</mes>
+			<año>1998</año>
+		</fecha>
+	</hecho>
+	<hecho>
+		<descripcion>Se funda Facebook</descripcion>
+		<fecha>
+			<dia>4</dia>
+			<mes>2</mes>
+			<año>2004</año>
+		</fecha>
+	</hecho>
+</hechoshistoricos>

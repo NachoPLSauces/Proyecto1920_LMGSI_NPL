@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>CSS 10 Nacho del Prado Losada</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+				font: 1.1em Helvetica Neue Helvetica Arial sans serif;
+				color: #555;
+				background-color: #F5F5F5;
+		    }
+			.container {
+				margin-top: 40px;
+				margin-bottom: 40px;
+				width: 90%;
+			}
+			.el {
+				padding: 40px;
+				margin-bottom: 30px;
+				background-color: #0099CC;
+				color: white;
+				background-image: url(images/workstation.jpg);
+				height: 300px;
+				background-repeat: no-repeat;
+				border: 30px solid rgba(233, 19, 140, 0.5);
+				background-position: top left;
+			}
+			.el-origin-border-box {
+				padding: 40px;
+				margin-bottom: 30px;
+				background-color: #0099CC;
+				color: white;
+				background-image: url(images/workstation.jpg);
+				height: 300px;
+				background-repeat: no-repeat;
+				border: 30px solid rgba(233, 19, 140, 0.5);
+				background-origin: border-box;
+				background-position: top left;
+			}
+			.el-origin-content-box {
+				padding: 40px;
+				margin-bottom: 30px;
+				background-color: #0099CC;
+				color: white;
+				background-image: url(images/workstation.jpg);
+				height: 300px;
+				background-repeat: no-repeat;
+				border: 30px solid rgba(233, 19, 140, 0.5);
+				background-origin: content-box;
+				background-position: top left;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="el">
+                <p>
+                    My background origin has the default <code>padding-box</code> value. The background's position origin is at the padding box's top left corner.
+                </p>
+            </div>
+            <div class="el-origin-border-box">
+                <p>
+                    My background origin has the value <code>border-box</code>. The background's position origin is at the border box's top left corner.
+                </p>
+            </div>
+            <div class="el-origin-content-box">
+                <p>
+                    My background origin has the value <code>content-box</code>. The background's position origin is at the content box's top left corner.
+                </p>
+            </div>
+           
+        </div>
+    </body>
+</html>

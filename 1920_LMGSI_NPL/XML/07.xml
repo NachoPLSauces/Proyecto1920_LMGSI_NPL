@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE horario [
+	<!ELEMENT ncurso (#PCDATA)>
+	<!ELEMENT cod_tutor (#PCDATA)>
+	<!ELEMENT ndia (#PCDATA)>
+	<!ELEMENT nasig (#PCDATA)>
+	<!ELEMENT cod_prof (#PCDATA)>
+	<!ELEMENT horai (#PCDATA)>
+	<!ELEMENT horaf (#PCDATA)>
+	<!ELEMENT codigo (#PCDATA)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT info (ncurso, cod_tutor)>
+	<!ELEMENT horas (horai, horaf)>
+	<!ELEMENT asignatura (nasig, cod_prof, horas+)>
+	<!ELEMENT dia (asignatura+)>
+	<!ELEMENT profesor (codigo, nombre)>
+	<!ELEMENT claves (profesor+)>
+	<!ELEMENT horario (info, dia+, claves)>
+
+]>
+
+
+<horario>
+	<info>
+		<ncurso>DAW 1</ncurso>
+		<cod_tutor>AMB</cod_tutor>
+	</info>
+
+	<dia>
+		<ndia>Lunes</ndia>
+		<asignatura>
+			<nasig>Entornos de Desarrollo</nasig>
+			<cod_prof>***</cod_prof>
+			<horas>
+				<horai>08:30</horai>
+				<horaf>09:20</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Formacion y Orientacion Laboral</nasig>
+			<cod_prof>CAFO</cod_prof>
+			<horas>
+				<horai>09:20</horai>
+				<horaf>10:10</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Programacion</nasig>
+			<cod_prof>AMB</cod_prof>
+			<horas>
+				<horai>10:10</horai>
+				<horaf>11:00</horaf>
+			</horas>
+			<horas>
+				<horai>11:25</horai>
+				<horaf>12:15</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Sistemas Informaticos</nasig>
+			<cod_prof>GBIF</cod_prof>
+			<horas>
+				<horai>12:15</horai>
+				<horaf>13:55</horaf>
+			</horas>
+		</asignatura>
+	</dia>
+
+	<dia>
+		<ndia>Martes</ndia>
+		<asignatura>
+			<nasig>Programacion</nasig>
+			<cod_prof>AMB</cod_prof>
+			<horas>
+				<horai>08:30</horai>
+				<horaf>10:10</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Lenguajes de Marcas</nasig>
+			<cod_prof>ARIF</cod_prof>
+			<horas>
+				<horai>10:10</horai>
+				<horaf>11:00</horaf>
+			</horas>
+			<horas>
+				<horai>11:25</horai>
+				<horaf>12:15</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Bases de Datos</nasig>
+			<cod_prof>MELI</cod_prof>
+			<horas>
+				<horai>12:15</horai>
+				<horaf>13:55</horaf>
+			</horas>
+		</asignatura>
+	</dia>
+
+	<dia>
+		<ndia>Miercoles</ndia>
+		<asignatura>
+			<nasig>Programacion</nasig>
+			<cod_prof>AMB</cod_prof>
+			<horas>
+				<horai>08:30</horai>
+				<horaf>10:10</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Entornos de Desarrollo</nasig>
+			<cod_prof>***</cod_prof>
+			<horas>
+				<horai>10:10</horai>
+				<horaf>11:00</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Formacion y Orientacion Laboral</nasig>
+			<cod_prof>CAFO</cod_prof>
+			<horas>
+				<horai>11:25</horai>
+				<horaf>12:15</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Bases de Datos</nasig>
+			<cod_prof>MELI</cod_prof>
+			<horas>
+				<horai>12:15</horai>
+				<horaf>13:55</horaf>
+			</horas>
+		</asignatura>
+	</dia>
+
+	<dia>
+		<ndia>Jueves</ndia>
+		<asignatura>
+			<nasig>Sistemas Informaticos</nasig>
+			<cod_prof>GBIF</cod_prof>
+			<horas>
+				<horai>08:30</horai>
+				<horaf>10:10</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Programacion</nasig>
+			<cod_prof>AMB</cod_prof>
+			<horas>
+				<horai>10:10</horai>
+				<horaf>11:00</horaf>
+			</horas>
+			<horas>
+				<horai>11:25</horai>
+				<horaf>12:15</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Lenguajes de Marcas</nasig>
+			<cod_prof>ARIF</cod_prof>
+			<horas>
+				<horai>12:15</horai>
+				<horaf>13:55</horaf>
+			</horas>
+		</asignatura>
+	</dia>
+
+	<dia>
+		<ndia>Viernes</ndia>
+		<asignatura>
+			<nasig>Entornos de desarrollo</nasig>
+			<cod_prof>***</cod_prof>
+			<horas>
+				<horai>08:30</horai>
+				<horaf>09:20</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Bases de Datos</nasig>
+			<cod_prof>MELI</cod_prof>
+			<horas>
+				<horai>09:20</horai>
+				<horaf>11:00</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Formacion y Orientacion Laboral</nasig>
+			<cod_prof>CAFO</cod_prof>
+			<horas>
+				<horai>11:25</horai>
+				<horaf>12:15</horaf>
+			</horas>
+		</asignatura>
+		
+		<asignatura>
+			<nasig>Sistemas Informaticos</nasig>
+			<cod_prof>GBIF</cod_prof>
+			<horas>
+				<horai>12:15</horai>
+				<horaf>13:55</horaf>
+			</horas>
+		</asignatura>
+	</dia>
+
+	<claves>
+		<profesor>
+			<cod>AMB</cod>
+			<nombre>Ambrosio</nombre>
+		</profesor>
+		<profesor>
+			<cod>CAFO</cod>
+			<nombre>Cielo</nombre>
+		</profesor>
+		<profesor>
+			<cod>ARIF</cod>
+			<nombre>Amor</nombre>
+		</profesor>
+		<profesor>
+			<cod>***</cod>
+			<nombre>Pablo</nombre>
+		</profesor>
+		<profesor>
+			<cod>GBIF</cod>
+			<nombre>Gustavo</nombre>
+		</profesor>
+		<profesor>
+			<cod>MELI</cod>
+			<nombre>Meli</nombre>
+		</profesor>
+	</claves>
+</horario>

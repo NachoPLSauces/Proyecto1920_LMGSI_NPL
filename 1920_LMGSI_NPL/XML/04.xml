@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE correo [
+	<!ELEMENT remitente (#PCDATA)>
+	<!ELEMENT correousuario (#PCDATA)>	
+	<!ELEMENT asunto (#PCDATA)>
+	<!ELEMENT mensaje (#PCDATA)>
+	<!ELEMENT tipo (#PCDATA)>
+	<!ELEMENT destinatarios (correousuario+)>
+	<!ELEMENT imagen (#PCDATA)>
+	<!ELEMENT adjuntos (imagen+)>
+	<!ELEMENT correo (remitente, destinatarios, asunto?, mensaje, adjuntos?)>
+	<!ATTLIST correo xmlns:xsi CDATA #IMPLIED
+					 xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+	<!ATTLIST correo fecha CDATA #IMPLIED>
+	<!ATTLIST imagen type (png|jpg) #REQUIRED>
+]>
+
+<correo fecha="14/01/2020" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="04.xsd">
+	<remitente>marodriguezn@educa.jcyl.es</remitente>
+	<destinatarios>
+		<correousuario>eduardo@educa.jcyl.es</correousuario>
+		<correousuario>maria@educa.jcyl.es</correousuario>
+	</destinatarios>
+	<asunto>Fiesta de fin de curso</asunto>
+	<mensaje>A las 20:00 en...</mensaje>
+	<adjuntos>
+		<imagen type="png">foto1.png</imagen>
+		<imagen type="png">foto2.png</imagen>
+	</adjuntos>
+</correo>

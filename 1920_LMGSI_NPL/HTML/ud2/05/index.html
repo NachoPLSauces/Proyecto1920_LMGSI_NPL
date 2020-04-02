@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Autor: Nacho del Prado Losada-->
+<!-- Fecha: 27/10/2019 -->
+<!-- Numero de practica: 05 -->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML 05 Nacho del Prado Losada</title>
+	</head>
+	<body>
+		<header>
+			<h1>Uso de las Redes Sociales</h1>
+		</header>
+		<form name="RedesSociales" method="get">
+			<fieldset>
+				<!-- Información del usuario obligatoria para enviar el cuetionario -->
+				<legend>Informaci&oacute;n personal</legend>
+				<div>
+					<!-- Nombre -->
+					<label for="LblNombre">Nombre y apellidos<br></label>
+					<input type="text" required name="nombre" placeholder="Escribe tu nombre y apellidos" id="LblNombre">
+				</div>
+				<br>
+				<div>
+					<!-- Nacimiento -->
+					<label for="LblNacimiento">Fecha de nacimiento<br></label>
+					<input type="date" required name="fecha" id="LblNacimiento">
+				</div>
+				<br>
+				<div>
+					<!-- Número de teléfono -->
+					<label for="LblTelefono">Tel&eacute;fono<br></label>
+					<input type="tel" required name="telefono" id="LblTelefono">
+				</div>
+				<br>
+				<div>
+					¡Gracias por participar en este formulario!
+					<figure>
+						<img src='https://educajcyl-my.sharepoint.com/:i:/g/personal/ignacio_pralos_educa_jcyl_es/ESw7Ak6pnHJEli32D8KMs18BzcIs8roC0cl3WHfWAHssOQ?e=CBVj35' alt="Gracias" width="125" height="125">
+					</figure>
+				</div>
+			</fieldset>
+			<br>
+			<fieldset>
+				<!-- Utilización de las redes -->
+				<legend>Uso de las Redes Sociales</legend>
+				<div>
+					<label for="LblUso">¿Cu&aacute;ntas horas al d&iacute;a utilizas redes sociales?<br>0</label>
+					<input type="range" min="0" max="6" value="3" list="lista" id="LblUso"/>+ de 5
+				</div>
+				<datalist id="lista">
+					<option value="0" label="0">
+					<option value="2" label="2">
+					<option value="4" label="4">
+					<option value="6" label="6">
+				</datalist>
+				<p>¿Qu&eacute; dispositivos sueles utilizar?</p>					
+				<div><label for="Lblmovil"><input type="checkbox" name="movil" id="Lblmovil" value="si"/>M&oacute;vil</label></div>
+				<div><label for="Lbltele"><input type="checkbox" name="tele" id="Lbltele" value="si"/>Televisi&oacute;n</label></div>
+				<div><label for="Lbltablet"><input type="checkbox" name="tablet" id="Lbltablet" value="si"/>Tablet</label></div>
+				<div><label for="Lblordenador"><input type="checkbox" name="ordenador" id="Lblordenador" value="si"/>Ordenador</label></div>
+				<div><label for="Lblotro"><input type="checkbox" name="otro" id="Lblotro" value="si"/>Otro</label></div>
+				<br>
+				<p>¿Qu&eacute; red utilizas con m&aacute;s frecuencia?</p>					
+				<div><label for="LblInstagram"><input type="radio" name="red" id="LblInstagram" value="si"/>Instagram</label></div>
+				<div><label for="LblWhatsapp"><input type="radio" name="red" id="LblWhatsapp" value="si"/>Whatsapp</label></div>
+				<div><label for="LblTwitter"><input type="radio" name="red" id="LblTwitter" value="si"/>Twitter</label></div>
+				<div><label for="LblFacebook"><input type="radio" name="red" id="LblFacebook" value="si"/>Facebook</label></div>
+				<div><label for="LblSnapchat"><input type="radio" name="red" id="LblSnapchat" value="si"/>Snapchat</label></div>
+				<div><label for="LblYoutube"><input type="radio" name="red" id="LblYoutube" value="si"/>Youtube</label></div>
+				<div><label for="LblOtra"><input type="radio" name="red" id="LblOtra" value="si"/>Otra</label></div>
+				<br>
+				<div>
+					<label for="LblHora">¿A qu&eacute; hora sueles conectarte por primera vez?<br><br></label>
+					<input type="time" name="hora" id="LblHora">
+				</div>
+				<br>
+				<div>
+					<label for="LblUsoRedes">¿Para que&eacute; usas tus redes sociales la mayor parte del tiempo?<br><br></label>
+					<input list="list1" name="listauso" id="LblUsoRedes"/>
+					<datalist id="list1">
+						<option value="Para hablar con amigos y compartir tu contenido con los dem&aacute;s">
+						<option value="Para consultar noticias sobre los temas que te interesan">
+						<option value="Como trabajo, ya sea realizando promociones o como un recurso m&aacute;s de tu empresa">
+						<option value="Para aprender ha hacer algo nuevo viendo tutoriales">
+						<option value="Para seguir a tus &iacute;dolos y artistas favoritos">
+						<option value="Para comprar art&iacute;culos online">
+						<option value="Otro uso">
+					</datalist>	
+				</div>
+				<br>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Opini&oacute;n sobre las Redes Sociales</legend>
+				<p>¿Crees que publicas contenido que limita tu privacidad?</p>					
+				<div><label for="LblSi1"><input type="radio" name="privacidad" id="LblSi1" value="si"/>Si</label></div>
+				<div><label for="LblNo1"><input type="radio" name="privacidad" id="LblNo1" value="no"/>No</label></div>
+				<br>
+				<p>¿Crees que permaneces conectado demasiado tiempo?</p>					
+				<div><label for="LblSi2"><input type="radio" name="tiempo" id="LblSi2" value="si"/>Si</label></div>
+				<div><label for="LblNo2"><input type="radio" name="tiempo" id="LblNo2" value="no"/>No</label></div>
+				<br>
+				<p>¿Qu&eacute; puedes hacer para evitar usarlas durante un tiempo prolongado?</p>
+				<div><textarea name="opinion" rows="8" cols="20">Escribe tu opini&oacute;n</textarea></div>
+			</fieldset>
+			<br>
+			<input type="image" src="https://educajcyl-my.sharepoint.com/:i:/g/personal/ignacio_pralos_educa_jcyl_es/EawD-1a-dcpPn78sXv9NuwABYoO_FDJCXx3TvAn_IqyDJg?e=9yINTu" name="fin" alt="enviar">
+			<input type="reset" value="Borrar">
+		</form>
+	</body>
+</html>

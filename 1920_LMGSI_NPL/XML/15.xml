@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<vertebrados	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="15.xsd">
+	<caracteristicas>
+		<titulo>CARACTERISTICAS COMUNES</titulo>
+		<comunes>Los vertebrados son animales que poseen ya sea un esqueleto óseo o huesos cartilaginosos.</comunes>
+	</caracteristicas>
+	<clasificacion>
+		<tipo>
+			<nombre></nombre>
+			<reproduccion></reproduccion>
+			<terrestre></terrestre>
+			<extremidades numero=""></extremidades>
+			<alimentacion></alimentacion>
+		</tipo>
+	</clasificacion>	
+</vertebrados>

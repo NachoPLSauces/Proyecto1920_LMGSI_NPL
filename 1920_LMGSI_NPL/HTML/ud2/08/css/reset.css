@@ -1,0 +1,11 @@
+﻿/* 
+    Created on  : 
+    Author      : 
+    File        : reset.css
+    Description : Resetear los estilos
+*/
+div, p{
+	border: 1px solid grey;
+	margin: 10px;
+}
+

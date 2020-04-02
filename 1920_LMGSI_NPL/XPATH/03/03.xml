@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<peliculas>
+    <pelicula>
+        <nombre>La invenci&#243;n de Hugo</nombre>
+        <valoracion puntos="5"/>
+        <publico>Todos los p&#250;blicos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>La piel que habito</nombre>
+        <valoracion puntos="3"/>
+        <publico>Adultos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Los descencientes</nombre>
+        <valoracion puntos="4"/>
+        <publico>Mayores de 12</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Como entrenar a tu drag&#243;n</nombre>
+        <valoracion puntos="4"/>
+        <publico>Todos los p&#250;blicos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Salvar al soldado Ryan</nombre>
+        <valoracion puntos="3"/>
+        <publico>Adultos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Bienvenidos al norte</nombre>
+        <valoracion puntos="5"/>
+        <publico>Todos los p&#250;blicos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Lucia y el sexo</nombre>
+        <valoracion puntos="2"/>
+        <publico>Adultos</publico>
+    </pelicula>
+</peliculas>
+
+<!--
+    a) //pelicula[valoracion/@puntos>=4]/nombre/text()
+    b) //pelicula[(valoracion/@puntos>=3)and(publico="Adultos")]/nombre/text()
+    c) count(//pelicula)
+    d) //pelicula[valoracion/@puntos=(//pelicula[nombre="La piel que habito"]/valoracion/@puntos)]/nombre/text()
+    e) //nombre/text()|//@puntos|//publico/text()
+    f) Mostrar nombre de las peliculas que contengan "La".
+       //nombre[contains(.,'La')]/text()
+-->

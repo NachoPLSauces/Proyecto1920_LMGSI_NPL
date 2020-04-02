@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Autor: Nacho del Prado Losada-->
+<!-- Fecha: 10/11/2019 -->
+<!-- Numero de practica: 07 -->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML 07 Nacho del Prado Losada</title>
+	</head>
+	<body>
+		<header>
+			<h1>MAPA DE IMAGEN: Uso de las Redes Sociales</h1>
+		</header>
+		<main>
+			<section>
+				<div>
+					<header>
+						<h2>Crea tu cuenta en distintas redes</h2>
+					</header>
+					<!-- Imagen de logos con links para registrarse -->
+					<figure>
+						<figcaption>Pulsa clic sobre un logo</figcaption>
+						<img src="images/logosredes.jpg" alt="logos" width="225" height="225" usemap="#logosmap"/>
+					</figure>
+					<!-- Creación del mapa. Áreas circulares -->
+					<map name="logosmap">
+						<area shape="circle" coords="65,65,40" alt="facebook" href="https://www.facebook.com/campaign/landing.php?&campaign_id=1555704227&extra_1=s%7Cc%7C294524218985%7Ce%7Cfacebook%7C&placement=&creative=294524218985&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1555704227%26adgroupid%3D57976163406%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9049009%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAh5_uBRA5EiwASW3Iarc-G64hHhRf72eLXuu75y_UgX1xxYy_hjZr-NBLZ0MYlpJFbyGNrRoCb2QQAvD_BwE">
+						<area shape="circle" coords="161,65,40" alt="whatsapp" href="https://web.whatsapp.com/">
+						<area shape="circle" coords="65,162,40" alt="instagram" href="https://www.instagram.com/?hl=es">
+						<area shape="circle" coords="161,162,40" alt="twitter" href="https://twitter.com/?lang=es">
+					</map>
+				</div>
+				<div>
+					<header>
+						<h2>Informaci&oacute;n y datos curiosos</h2>
+					</header>
+					<!-- Imagen de distintos logos con links hacia distintos datos de cada red social -->
+					<figure>
+						<figcaption>Pulsa clic sobre un logo para acceder a la informaci&oacute;n</figcaption>
+						<img src="images/inforedes.png" alt="info" width="360" height="203" usemap="#infomap"/>
+					</figure>
+					<map name="infomap">
+						<area shape="poly" coords="46,66,105,45,126,106,67,127" alt="twitter" href="https://www.blogpocket.com/2013/01/17/50-datos-curiosos-sobre-twitter/">
+						<area shape="rect" coords="148,34,212,98" alt="instagram" href="https://www.oberlo.es/blog/estadisticas-de-instagram">
+						<area shape="poly" coords="256,37,316,56,294,116,236,95" alt="facebook" href="https://www.lavanguardia.com/vida/20191108/471448369258/facebook-uso-datos-de-usuario-para-presionar-a-sus-competidores.html">
+						<area shape="poly" coords="96,131,157,112,173,171,113,189" alt="youtube" href="https://www.youtube.com/watch?v=FM15W89bNC0">
+						<area shape="poly" coords="203,104,262,120,248,179,187,164" alt="snapchat" href="https://www.merca20.com/esta-es-la-razon-del-fracaso-de-snapchat/">
+					</map>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

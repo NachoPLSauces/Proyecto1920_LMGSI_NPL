@@ -1,0 +1,10 @@
+/* 
+    Created on : 
+    Author     : 
+    File        : estilo7.css
+    Description : Trabajando con selectores
+*/
+.padre > div{border: 1px solid red;}
+
+
+

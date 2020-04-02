@@ -1,0 +1,52 @@
+
+/* 
+    Created on : 27-nov-2019, 19:10:50
+    Author     : Amor Rodríguez <amor at marodriguezn@educa.jcyl.es>
+    Colores utilizados: https://www.w3schools.com/colors/colors_groups.asp 
+*/
+body {
+	font-family: calibri, arial, sans-serif;
+	margin-right: 250px;
+	background-image: url(../images/Le_petit_prince.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+h1 {
+	background-color: #FFA500;
+	color: #FF0000;
+}
+h2 {
+	color: Crimson;
+}
+caption {
+	color: green;
+	text-transform: uppercase;
+	font-style: italic;
+	caption-side: bottom;
+}
+.tabla1 {
+	margin: 0px 70px;
+	border-collapse: collapse;
+}
+.tabla1 td, .tabla1 th {
+	border-bottom: 1px solid #DDD;
+	padding: 5px;
+}
+.tabla2 {
+	font-size: 0.875em;
+	border-collapse: collapse;
+}
+.tabla2, .tabla2 td, .tabla2 th {
+	border: solid 1px #DDD;
+	padding: 5px;
+}
+.tabla2 th {
+	background-color: MediumSeaGreen;
+	vertical-align: bottom;
+}
+.tabla2 tr {
+	background-color: #E0FFFF;
+}
+.tabla2 tr:nth-child(odd) {
+	background-color: #F5F5F5;
+}
