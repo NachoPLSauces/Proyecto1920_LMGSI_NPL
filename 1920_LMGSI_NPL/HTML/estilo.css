@@ -1,7 +1,6 @@
 body {
 	font-family: calibri;
 	background-color: #eeeeee;
-<<<<<<< HEAD
 	background-attachment: fixed;
 	bottom: 0;
 	background-repeat: repeat-y;
@@ -122,7 +121,6 @@ table {
 .filaSeparador {
     height: 45px;
     width: 100%;
-=======
 	background-attachment: static;
 	bottom: 0;
 	background-repeat: repeat-y;
@@ -191,5 +189,4 @@ footer {
 	background-color: #222831;
 	background-size: 100%;
 	color: white;
->>>>>>> origin/master
 }
