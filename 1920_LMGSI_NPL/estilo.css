@@ -1,7 +1,6 @@
 body {
     font-family: calibri;
     background-color: #eeeeee;
-    background-attachment: static;
     bottom: 0;
     background-repeat: repeat-y;
     background-size: 100%;
@@ -13,7 +12,7 @@ header {
     color: #FFF;
     background-color: #393e46;
     width: 100%;
-    padding: 15px;
+    padding: 5px;
     font-size: 20px;
     text-align: center;
     left: 0;
@@ -151,7 +150,6 @@ a:hover {
 }
 
 footer {
-	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
