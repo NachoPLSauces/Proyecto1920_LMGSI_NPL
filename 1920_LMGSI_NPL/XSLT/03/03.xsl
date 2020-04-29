@@ -44,10 +44,6 @@
                         display: inline-block;
                     }
                     
-                    div:nth-last-child {
-                        
-                    }
-                    
                     footer {
                         width: 100%;
                         color: white;
