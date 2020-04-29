@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+<!-- Tipo simple puntos -->  
+<xs:simpleType name="tipoPuntos">
+    <xs:restriction base="xs:integer">				
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="10"/>
+    </xs:restriction>
+</xs:simpleType>
+
+
+<xs:element name="peliculas">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="pelicula" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="valoracion">
+                            <xs:complexType>
+                                <xs:attribute name="puntos" type="tipoPuntos"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="publico" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
