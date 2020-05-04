@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>04 XSLT Nacho del Prado Losada</title>
+        <style>
+                    body {
+                        font-family: 'Permanent Marker', cursive;
+                    }
+                    
+                    .comentarios {
+                        margin: 5px;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .comentarios header {
+                        margin-left:0;
+                    }
+                    
+                    .comentarios header p {
+                        padding-rigth: 10px;
+                    }
+                    
+                    .headerEjercicio {
+                        background-color: #387ab6;
+                        color: #fff;
+                        margin-bottom: 5px;
+                        padding: 10px ;
+                        width: auto;
+                        font-size: 20px;
+                        
+                    }
+                    
+                    .titulo {
+                        margin: 5px;
+                        width: 100%;
+                        background-color: #387ab6;
+                        color: #fff;
+                        padding: 20px;
+                        text-align: center;
+                        text-decoration: capitalize;
+                    }
+                    
+                    footer {
+                        margin: 5px;
+                        width: 100%;
+                        background-color: #387ab6;
+                        color: #fff;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    
+                    .ejercicio {
+                        margin: 5px 25%;
+                        border: 5px solid #387ab6;
+                        padding: 5px;
+                    }
+                    
+                    .resultado {
+                        border-top: 3px solid grey;
+                    }
+                    
+                    .opcion p {
+                        margin-left: 35px;
+                    }
+                </style>
+    </head>
+    <body>
+        <header class="titulo">
+            <h1>Pr&aacute;ctica 04 XPATH</h1>
+        </header>
+        <main>
+            <div class="comentarios">
+                <header>
+                    <h2>COMENTARIOS</h2>
+                </header>
+                <p>
+                    <!--Los comentarios no aparecen.-->
+                    <SRC_COMMENT> Creado por.- Nacho del Prado Losada </SRC_COMMENT>
+                    <SRC_COMMENT> Fecha: 04/05/2020 </SRC_COMMENT>
+                    <SRC_COMMENT> Descripcion.- Expresiones de XPATH, ejercicio 04. Informaci&oacute;n sobre las actividades de un gimnasio </SRC_COMMENT>
+                    <SRC_COMMENT> Dificultades.- Al pricipio utilic&eacute; templates para las dos primeras expresiones, pero al utilizar match="actividades" en ambas
+ no se pod&iacute;an obtener los resultados correctos, y tampoco pod&iacute;a utilizar otra palabra ya que daba error.</SRC_COMMENT>
+                </p>
+            </div>
+            <div class="ejercicio">
+                <header class="headerEjercicio">
+                    <h2>01 Todos los elementos de las actividades infantiles.</h2>
+                </header>
+                <div class="opcion">
+                    <h3>Opci&oacute;n A: //actividad[@nivel="infantil"]/*</h3>
+                    <div class="resultado">
+                        <ul>
+                            <li>codigo: A01</li>
+                            <li>titulo: Al agua patos</li>
+                            <li>fecha_inicio: 2017-01-15</li>
+                            <li>sesiones: 453</li>
+                        </ul>
+                    </div>
+                    <div class="resultado">
+                        <ul>
+                            <li>codigo: A04</li>
+                            <li>titulo: Socorrismo</li>
+                            <li>fecha_inicio: 2017-01-15</li>
+                            <li>sesiones: 452</li>
+                        </ul>
+                    </div>
+                    <div class="resultado">
+                        <ul>
+                            <li>codigo: A05</li>
+                            <li>titulo: Perfeccionamiento en el agua</li>
+                            <li>fecha_inicio: 2017-01-15</li>
+                            <li>sesiones: 452</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ejercicio">
+                <header class="headerEjercicio">
+                    <h2>02 El nombre de las actividades para adultos.</h2>
+                </header>
+                <div class="opcion">
+                    <h3>Opci&oacute;n A: //actividad[@nivel="adultos"]/titulo/text()</h3>
+                    <ul>
+                        <li>Spinning y agua</li>
+                        <li>Spinning en el agua</li>
+                        <li>Aprender a nadar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ejercicio">
+                <header class="headerEjercicio">
+                    <h2>03 El nombre de las actividades con dos sesiones por semana.</h2>
+                </header>
+                <div class="opcion">
+                    <h3>Opci&oacute;n A: //actividad[./sesiones/sesiones_semana=2]/titulo/text()</h3>
+                    <ul>
+                        <li>Spinning en el agua</li>
+                        <li>Socorrismo</li>
+                        <li>Perfeccionamiento en el agua</li>
+                        <li>Aprender a nadar</li>
+                    </ul>
+                </div>
+                <div class="opcion">
+                    <h3>Opci&oacute;n B: //sesiones[/sesiones_semana=2]/../titulo/text()</h3>
+                    <ul>
+                        <li>Spinning en el agua</li>
+                        <li>Socorrismo</li>
+                        <li>Perfeccionamiento en el agua</li>
+                        <li>Aprender a nadar</li>
+                    </ul>
+                </div>
+                <div class="opcion">
+                    <h3>Opci&oacute;n C: //sesiones[/sesiones_semana=2]/parent::node()/titulo/text()</h3>
+                    <ul>
+                        <li>Spinning en el agua</li>
+                        <li>Socorrismo</li>
+                        <li>Perfeccionamiento en el agua</li>
+                        <li>Aprender a nadar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ejercicio">
+                <header>
+                    <h2 class="headerEjercicio">04 Cuenta el n&uacute;mero de actividades.</h2>
+                </header>
+                <div class="opcion">
+                    <h3>Opci&oacute;n A: count(//actividad)</h3>
+                    <p>N&uacute;mero de actividades: 6</p>
+                </div>
+            </div>
+            <div class="ejercicio">
+                <header class="headerEjercicio">
+                    <h2>05 Cuenta el n&uacute;mero de actividades infantiles.</h2>
+                </header>
+                <div class="opcion">
+                    <h3>Opci&oacute;n A: count(//actividad[@nivel="infantil"])</h3>
+                    <p>N&uacute;mero de actividades infantiles: 3</p>
+                </div>
+            </div>
+            <div class="ejercicio">
+                <header class="headerEjercicio">
+                    <h2>06 Convertir el n&uacute;mero de actividades a string.</h2>
+                </header>
+                <div class="opcion">
+                    <h3>Opci&oacute;n A: string(count(//actividad))</h3>
+                    <p>N&uacute;mero de actividades: 6</p>
+                </div>
+            </div>
+            <div class="ejercicio">
+                <header class="headerEjercicio">
+                    <h2>07 Suma de las sesiones semanales de las actividades para adultos.</h2>
+                </header>
+                <div class="opcion">
+                    <h3>Opci&oacute;n A: sum(//sesiones_semana[//actividad/@nivel="adultos"])</h3>
+                    <p>Suma de las sesiones semanales de las actividades para adultos: 14</p>
+                </div>
+            </div>
+            <div class="ejercicio">
+                <header class="headerEjercicio">
+                    <h2>08 Nodos de la actividad de c&oacute;digo A06.</h2>
+                </header>
+                <div class="opcion">
+                    <h3>Opci&oacute;n A: //actividad[codigo="A06"]/node()</h3>
+                    <ul>
+                        <li>codigo: A06</li>
+                        <li>titulo: Aprender a nadar</li>
+                        <li>fecha_inicio: 2017-02-15</li>
+                        <li>minutos_sesion: 30</li>
+                        <li>sesiones_semana: 2</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>2019-2020. Nacho del Prado Losada. Todos los derechos Reservados</p>
+            <p>&Uacute;ltima actualizaci&oacute;n: 04/05/2020</p>
+        </footer>
+    </body>
+</html>
