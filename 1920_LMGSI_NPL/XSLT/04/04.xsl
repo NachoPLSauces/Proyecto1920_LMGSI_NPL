@@ -11,6 +11,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
 
+    
     <!-- Creación de la estructura de la página web -->
     <xsl:template match="/actividades">
         <html>
@@ -91,12 +92,7 @@
                         </header> 
                         
                         <p>
-                            <xsl:comment>Los comentarios no aparecen.</xsl:comment>
-                            <xsl:for-each select="//comment()">
-                                <SRC_COMMENT>
-                                    <xsl:value-of select="."/>
-                                </SRC_COMMENT>
-                           </xsl:for-each>
+                            <xsl:apply-templates select="comment()"/>
                         </p>
                     </div>
                     
@@ -253,12 +249,36 @@
         <xsl:if test='./@nivel="infantil"'>
             <div class="resultado">
                 <ul>
-                    <li><xsl:value-of select="name(//codigo)"/>: <xsl:value-of select="./codigo/text()"/></li>
-                    <li><xsl:value-of select="name(//titulo)"/>: <xsl:value-of select="./titulo/text()"/></li>
-                    <li><xsl:value-of select="name(//fecha_inicio)"/>: <xsl:value-of select="./fecha_inicio/text()"/></li>
-                    <li><xsl:value-of select="name(//sesiones)"/>: <xsl:value-of select="./sesiones/minutos_sesion/text()"/> <xsl:value-of select="./sesiones/sesiones_semana/text()"/></li>
+                    <li><xsl:value-of select="name(codigo)"/>: <xsl:value-of select="./codigo/text()"/></li>
+                    <li><xsl:value-of select="name(titulo)"/>: <xsl:value-of select="./titulo/text()"/></li>
+                    <li><xsl:value-of select="name(fecha_inicio)"/>: <xsl:value-of select="./fecha_inicio/text()"/></li>
+                    <li><xsl:value-of select="name(sesiones)"/>: <xsl:value-of select="./sesiones/minutos_sesion/text()"/> <xsl:value-of select="./sesiones/sesiones_semana/text()"/></li>
                 </ul>
             </div>
         </xsl:if>
     </xsl:template>
+    
+    <xsl:template name="miHead">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0"/>
+        <meta name="author" content="Nacho del Prado Losada">
+        <meta name="application-name" content="Actividades de un gimnasio"/>
+        <meta name="robots" content="index, follow"/>
+    </xsl:template>
+
+    <xsl:template name="doctype">
+        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="comment()">
+        <xsl:text>
+        </xsl:text>
+        <xsl:comment><xsl:value-of select="."/></xsl:comment>
+        <xsl:if test="position()=last()">
+        <xsl:text>
+            
+        </xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
 </xsl:stylesheet>

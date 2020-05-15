@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+     
+<!-- Tipo del elemento matricula -->  
+<xs:simpleType name="tipoMatricula">
+    <xs:restriction base="xs:string">				
+        <xs:pattern value="[0-9][0-9][0-9][0-9][A-C]"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- Tipo del elemento propietario -->  
+<xs:simpleType name="tipoPropietario">
+    <xs:restriction base="xs:string">				
+        <xs:pattern value="[P][0-9][0-9]"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- Tipo del elemento minutos_sesion -->  
+<xs:simpleType name="tipoCodigo">
+    <xs:restriction base="xs:string">				
+        <xs:pattern value="[J][0-9][0-9][0-9][0-9]"/>
+    </xs:restriction>
+</xs:simpleType>
+   
+<xs:element name="garaje">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="coches">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="coche" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="matricula" type="tipoMatricula"/>
+                                    <xs:element name="propietario" type="tipoPropietario"/>
+                                    <xs:element name="marca" type="xs:string"/>
+                                    <xs:element name="modelo" type="xs:string"/>
+                                    <xs:element name="color" type="xs:string"/>
+                                    <xs:element name="km" type="xs:integer"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="reparaciones">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="reparacion" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="matricula" type="tipoMatricula"/>
+                                    <xs:element name="descripcion" type="xs:string"/>
+                                    <xs:element name="fecha_entrada" type="xs:string"/>
+                                    <xs:element name="fecha_salida" type="xs:string"/>
+                                    <xs:element name="horas" type="xs:integer"/>
+                                </xs:sequence>
+                                <xs:attribute name="codigo" type="tipoCodigo"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="concesionarios">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="concesionario" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="marca" type="xs:string"/>
+                                    <xs:element name="url" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
